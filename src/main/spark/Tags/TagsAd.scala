@@ -23,10 +23,13 @@ object TagsAd extends Tag{
     }
     // 广告名称
     val adName = row.getAs[String]("adspacetypename")
-    if(StringUtils.isBlank(adName)){
+    if(StringUtils.isNotBlank(adName)){
       list:+=("LN"+adName,1)
     }
-
+    val channel = row.getAs[Int]("adplatformproviderid").toString
+    if(StringUtils.isNotBlank(channel)){
+      list:+=("CN"+channel,1)
+    }
     list
 
   }
