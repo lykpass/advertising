@@ -12,7 +12,7 @@ object Test {
     import spark.implicits._
 
     // 读取数据文件
-    val df = spark.read.parquet("D:\\项目数据\\log.parquet")
+    val df = spark.read.parquet("D:\\项目数据\\newparquet")
     df.rdd.map(row=>{
       // 圈
       AmapUtil.getBusinessFromAmap(
