@@ -4,7 +4,6 @@ import org.apache.hadoop.hbase.client.Put
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.rdd.RDD
-import util.TagUtils
 import org.apache.spark.sql.SparkSession
 import util.TagUtils
 
